@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nishants-lab.github.io/airy/sitemap.xml
