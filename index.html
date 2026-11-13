@@ -7,6 +7,9 @@
 <meta name="description" content="Airy is a free Windows browser that lets background tabs sleep and blocks ads and trackers by default. With 8 busy tabs it used 62% less memory than Chrome and 47% less than Edge.">
 <link rel="canonical" href="https://nishants-lab.github.io/airy/">
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-256.png">
+<meta name="theme-color" content="#f6f8fc">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Airy","applicationCategory":"BrowserApplication","operatingSystem":"Windows 10, Windows 11","softwareVersion":"1.1.0","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"downloadUrl":"https://github.com/nishants-lab/airy/releases/download/v1.1.0/AirySetup-1.1.0.exe","url":"https://nishants-lab.github.io/airy/","license":"https://opensource.org/license/mit"}</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Airy: a light, private browser for Windows">
 <meta property="og:description" content="A free, private browser for Windows. 8 busy tabs: 777 MB in Airy, 2,043 MB in Chrome, 1,460 MB in Edge.">
@@ -48,7 +51,7 @@
     <div class="hero-copy">
       <p class="lede reveal">Airy runs on the same Chromium engine as Chrome and Edge, so your sites work the same. Background tabs go to sleep after 30 seconds, and ads and trackers are blocked by default.</p>
       <div class="cta reveal">
-        <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.0.1/AirySetup-1.0.1.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download for Windows</a>
+        <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.1.0/AirySetup-1.1.0.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download for Windows</a>
         <a class="btn btn-quiet" href="#memory">See the numbers</a>
       </div>
       <ul class="fine reveal"><li>Free, MIT License</li><li>No account</li><li>No telemetry</li><li>No admin rights to install</li></ul>
@@ -145,7 +148,7 @@
     <h2 style="margin-top:1.2rem">Airy, Chrome and Edge <em>compared</em></h2>
     <div class="tbl-wrap">
       <table>
-        <thead><tr><th scope="col"><span class="skip">Feature</span></th><th scope="col" class="us">Airy 1.0</th><th scope="col">Chrome</th><th scope="col">Edge</th></tr></thead>
+        <thead><tr><th scope="col"><span class="skip">Feature</span></th><th scope="col" class="us">Airy</th><th scope="col">Chrome</th><th scope="col">Edge</th></tr></thead>
         <tbody>
           <tr><th scope="row">Memory, 8 busy tabs after 60 s idle</th><td class="us num">777 MB</td><td class="num">2,043 MB</td><td class="num">1,460 MB</td></tr>
           <tr><th scope="row">Background tabs sleep</th><td class="us">After 30 seconds</td><td>Memory Saver, on Chrome's own timing</td><td>After 15 minutes (default)</td></tr>
@@ -157,7 +160,8 @@
           <tr><th scope="row">Account or sign-in</th><td class="us">None</td><td>Optional</td><td>Optional</td></tr>
           <tr><th scope="row">Extensions</th><td class="us no">Not yet</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
           <tr><th scope="row">Sync across devices</th><td class="us no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-          <tr><th scope="row">Import bookmarks and passwords</th><td class="us no">Not yet</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><th scope="row">Bookmarks</th><td class="us yes">Yes, with import from Chrome and Edge</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><th scope="row">Import passwords</th><td class="us no">Not yet</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
           <tr><th scope="row">Runs on</th><td class="us">Windows 10 and 11</td><td>Windows, Mac, Linux, phones</td><td>Windows, Mac, Linux, phones</td></tr>
           <tr><th scope="row">Price</th><td class="us">Free</td><td>Free</td><td>Free</td></tr>
         </tbody>
@@ -174,38 +178,40 @@
       <ul class="fam-list">
         <li><b>Tabs in the title bar</b><span>Like Chrome and Edge, with Windows 11 Snap Layouts on the maximize button.</span></li>
         <li><b>Light and dark</b><span>Follows your Windows theme, and sites get the same setting. You can also pick one under Appearance.</span></li>
+        <li><b>Bookmarks</b><span>Click the star in the address bar or press Ctrl+D. Import your bookmarks from Chrome or Edge from the menu; they appear as tiles on the new tab page.</span></li>
+        <li><b>Find and zoom</b><span>Ctrl+F finds text on the page. Zoom from the menu, or with Ctrl+plus, Ctrl+minus and Ctrl+0.</span></li>
         <li><b>The shortcuts you know</b><span>Ctrl+T, Ctrl+W, Ctrl+Shift+T, Ctrl+L, Ctrl+Tab, F11 and the rest.</span></li>
         <li><b>Your tabs come back</b><span>Airy reopens your tabs when it starts.</span></li>
         <li><b>Downloads, print, dev tools</b><span>The engine's own, the same as in Edge.</span></li>
         <li><b>One window</b><span>Links you open from other apps land as a new tab in the window you already have open.</span></li>
       </ul>
     </div>
-    <img class="menu-shot" src="assets/menu.webp" width="390" height="755" alt="Airy's main menu in dark theme: new tab, new private tab, sleep background tabs now, unload background tabs now, memory saving, privacy and security, appearance, search engine, downloads, print, memory by process, developer tools.">
+    <img class="menu-shot" src="assets/menu.webp" width="511" height="826" alt="Airy's main menu in dark theme: new tab, new private tab, reopen closed tab, bookmarks, find on page, zoom, print, downloads, sleep background tabs now, unload background tabs now, memory by process, memory saving, privacy and security, appearance, search engine, reopen tabs on start, developer tools, about Airy, exit.">
   </div>
 </section>
 <section class="dl" id="download">
   <div class="wrap dl-card">
     <div>
       <img class="icon" src="assets/icon-256.png" alt="" width="72" height="72">
-      <h2>Download <em>Airy 1.0</em></h2>
-      <p class="lede" style="margin-top:1.2rem">Version 1.0.1. Free, for Windows 10 (version 1903 or later) and Windows 11, 64-bit.</p>
+      <h2>Download <em>Airy 1.1</em></h2>
+      <p class="lede" style="margin-top:1.2rem">Version 1.1.0. Free, for Windows 10 (version 1903 or later) and Windows 11, 64-bit.</p>
       <div class="req">
         <p>The .NET runtime is included. Airy uses the Microsoft Edge WebView2 Runtime, which Windows 11 includes and most Windows 10 PCs already have; setup links to Microsoft's installer if it is missing.</p>
-        <p>Airy is not code-signed yet, so Windows SmartScreen may say "Windows protected your PC". Choose <b>More info</b>, then <b>Run anyway</b>. You can check the files against <a href="https://github.com/nishants-lab/airy/releases/download/v1.0.1/SHA256SUMS.txt">SHA256SUMS.txt</a>.</p>
+        <p>Airy is not code-signed yet, so Windows SmartScreen may say "Windows protected your PC". Choose <b>More info</b>, then <b>Run anyway</b>. You can check the files against <a href="https://github.com/nishants-lab/airy/releases/download/v1.1.0/SHA256SUMS.txt">SHA256SUMS.txt</a>.</p>
       </div>
     </div>
     <div class="files">
       <div class="file">
         <h3>Installer</h3>
-        <p>AirySetup-1.0.1.exe, 46 MB. Installs for your account only, adds a Start menu entry, lists Airy under Default apps, and removes cleanly from Settings.</p>
-        <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.0.1/AirySetup-1.0.1.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download</a>
+        <p>AirySetup-1.1.0.exe, 46 MB. Installs for your account only, adds a Start menu entry, lists Airy under Default apps, and removes cleanly from Settings.</p>
+        <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.1.0/AirySetup-1.1.0.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download</a>
       </div>
       <div class="file">
         <h3>Portable</h3>
-        <p>Airy-1.0.1-win-x64.zip, 46 MB. Extract anywhere and run Airy\Airy.exe. Nothing is installed; your data stays in the folder.</p>
-        <a class="btn btn-quiet" href="https://github.com/nishants-lab/airy/releases/download/v1.0.1/Airy-1.0.1-win-x64.zip">Download zip</a>
+        <p>Airy-1.1.0-win-x64.zip, 46 MB. Extract anywhere and run Airy\Airy.exe. Nothing is installed; your data stays in the folder.</p>
+        <a class="btn btn-quiet" href="https://github.com/nishants-lab/airy/releases/download/v1.1.0/Airy-1.1.0-win-x64.zip">Download zip</a>
       </div>
-      <p class="small muted">To make Airy your default browser, open Settings, Apps, Default apps and choose Airy. Windows lets only you change it, so setup never does. Silent install: <code>AirySetup-1.0.1.exe /S</code>. All versions: <a href="https://github.com/nishants-lab/airy/releases">release page</a>.</p>
+      <p class="small muted">To make Airy your default browser, open Settings, Apps, Default apps and choose Airy. Windows lets only you change it, so setup never does. Silent install: <code>AirySetup-1.1.0.exe /S</code>. All versions: <a href="https://github.com/nishants-lab/airy/releases">release page</a>.</p>
     </div>
   </div>
 </section>
@@ -218,7 +224,8 @@
       <details><summary>Why does Windows warn me about the download?</summary><p>SmartScreen warns about new apps that are not code-signed. Airy is not signed yet. Choose More info, then Run anyway, and compare the file with SHA256SUMS.txt if you want to be sure it is the original.</p></details>
       <details><summary>Does Airy collect anything?</summary><p>No. Airy has no telemetry, no account and no servers. The WebView2 engine's own diagnostic data follows your Windows privacy settings.</p></details>
       <details><summary>Where is my data kept?</summary><p>Installed: <code>%LOCALAPPDATA%\Airy</code>, kept when you update. Portable: an AiryData folder next to Airy.exe. Uninstalling asks whether to delete it.</p></details>
-      <details><summary>Can I bring my bookmarks and extensions?</summary><p>Not in 1.0. Airy starts with a fresh profile and does not run Chrome extensions. Passwords and autofill you save in Airy are kept by the engine.</p></details>
+      <details><summary>Can I bring my bookmarks and extensions?</summary><p>Bookmarks, yes: open the menu, then Bookmarks, then Import from Chrome or Import from Edge. Airy reads the bookmarks of that browser's main profile on this PC and nothing else. Extensions and saved passwords do not carry over. Passwords and autofill you save in Airy are kept by the engine.</p></details>
+      <details><summary>How do I update Airy?</summary><p>Download the new setup and run it. It replaces the old version and keeps your tabs, bookmarks, settings and data; if Airy is open, setup closes it first and your tabs come back. Airy does not update itself yet. New versions are posted on the <a href="https://github.com/nishants-lab/airy/releases">release page</a>.</p></details>
       <details><summary>How do I remove it?</summary><p>Settings, Apps, Installed apps, Airy, Uninstall. Or run <code>Uninstall.exe /S</code> from the install folder.</p></details>
     </div>
   </div>
