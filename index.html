@@ -46,7 +46,7 @@
       <h1 class="reveal"><span>Eight tabs in 777 MB.</span> <em>Chrome used 2,043 MB.</em></h1>
     </div>
     <div class="hero-copy">
-      <p class="lede reveal">Airy runs on the same Chromium engine as Chrome and Edge, so your sites work the same. The difference: background tabs go to sleep after 30 seconds, and ads and trackers are blocked by default.</p>
+      <p class="lede reveal">Airy runs on the same Chromium engine as Chrome and Edge, so your sites work the same. Background tabs go to sleep after 30 seconds, and ads and trackers are blocked by default.</p>
       <div class="cta reveal">
         <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.0.0/AirySetup-1.0.0.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download for Windows</a>
         <a class="btn btn-quiet" href="#memory">See the numbers</a>
@@ -95,11 +95,11 @@
 <section class="states">
   <div class="wrap states-grid">
     <div>
-      <p class="kicker">How tabs rest</p>
+      <p class="kicker">Tab sleep</p>
       <h2 style="margin-top:1.2rem">What happens to <em>a background tab</em></h2>
       <ol class="timeline">
         <li><span class="dot">1</span><div><h3>Live <small>the tab you are on</small></h3><p>Full page in memory. A tab you left less than 30 seconds ago is still live.</p></div></li>
-        <li><span class="dot">2</span><div><h3>Sleeping <small>after 30 seconds</small></h3><p>Frozen: no scripts, timers or drawing, and the engine is asked to trim its memory. One click and it is back, instantly.</p></div></li>
+        <li><span class="dot">2</span><div><h3>Sleeping <small>after 30 seconds</small></h3><p>Frozen: no scripts, timers or drawing, and the engine is asked to trim its memory. Click the tab to wake it.</p></div></li>
         <li><span class="dot">3</span><div><h3>Unloaded <small>after 10 minutes</small></h3><p>After 10 minutes in the background, or once more than four tabs are in memory. Only the title, icon and address are kept; click it and the page loads again.</p></div></li>
       </ol>
       <p class="note">Tabs playing audio, tabs still loading and tabs you mark "Keep this tab awake" are never touched.</p>
@@ -115,7 +115,7 @@
     <div class="priv-copy">
       <p class="kicker">Private by default</p>
       <h2>Protection that is on <em>from the start</em></h2>
-      <p class="lede">Every protection below is on when you first open Airy. The shield button shows what was blocked on each page. The defaults follow Brave's.</p>
+      <p class="lede">Every protection below is on when you first open Airy. The shield button shows what was blocked on each page.</p>
       <img src="assets/protect.webp" width="642" height="365" alt="Airy's Protection panel for a news site: protection on, 2 ads and trackers blocked on this page, fingerprinting protected, tracking prevention strict.">
     </div>
     <ul class="plist">
@@ -173,7 +173,7 @@
       <h2 style="margin-top:1.2rem">Works like <em>Chrome and Edge</em></h2>
       <ul class="fam-list">
         <li><b>Tabs in the title bar</b><span>Like Chrome and Edge, with Windows 11 Snap Layouts on the maximize button.</span></li>
-        <li><b>Light and dark</b><span>Follows your Windows theme and tells sites, or pick one under Appearance.</span></li>
+        <li><b>Light and dark</b><span>Follows your Windows theme, and sites get the same setting. You can also pick one under Appearance.</span></li>
         <li><b>The shortcuts you know</b><span>Ctrl+T, Ctrl+W, Ctrl+Shift+T, Ctrl+L, Ctrl+Tab, F11 and the rest.</span></li>
         <li><b>Your tabs come back</b><span>Airy reopens your tabs when it starts.</span></li>
         <li><b>Downloads, print, dev tools</b><span>The engine's own, the same as in Edge.</span></li>
@@ -214,7 +214,7 @@
     <div><p class="kicker">FAQ</p><h2 style="margin-top:1.2rem">Common <em>questions</em></h2></div>
     <div>
       <details><summary>Will my sites work?</summary><p>Yes. Airy draws pages with Microsoft Edge WebView2, the same Chromium engine that runs Edge, and Windows keeps it up to date. Sites that work in Chrome and Edge work in Airy.</p></details>
-      <details><summary>What happens to a sleeping tab?</summary><p>It is frozen in place: no scripts, timers or video run until you click it, and then it wakes instantly. After 10 minutes in the background it is unloaded, and clicking it loads the page again. You can change both times under Memory saving, or mark a tab "Keep this tab awake".</p></details>
+      <details><summary>What happens to a sleeping tab?</summary><p>It is frozen in place: no scripts, timers or video run until you click it. After 10 minutes in the background it is unloaded, and clicking it loads the page again. You can change both times under Memory saving, or mark a tab "Keep this tab awake".</p></details>
       <details><summary>Why does Windows warn me about the download?</summary><p>SmartScreen warns about new apps that are not code-signed. Airy is not signed yet. Choose More info, then Run anyway, and compare the file with SHA256SUMS.txt if you want to be sure it is the original.</p></details>
       <details><summary>Does Airy collect anything?</summary><p>No. Airy has no telemetry, no account and no servers. The WebView2 engine's own diagnostic data follows your Windows privacy settings.</p></details>
       <details><summary>Where is my data kept?</summary><p>Installed: <code>%LOCALAPPDATA%\Airy</code>, kept when you update. Portable: an AiryData folder next to Airy.exe. Uninstalling asks whether to delete it.</p></details>
