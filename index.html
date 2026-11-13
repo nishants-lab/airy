@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://nishants-lab.github.io/airy/">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Airy: tabs that rest, a PC that breathes">
+<meta property="og:title" content="Airy: a light, private browser for Windows">
 <meta property="og:description" content="A free, private browser for Windows. 8 busy tabs: 777 MB in Airy, 2,043 MB in Chrome, 1,460 MB in Edge.">
 <meta property="og:url" content="https://nishants-lab.github.io/airy/">
 <meta property="og:image" content="https://nishants-lab.github.io/airy/assets/og.png">
@@ -43,10 +43,10 @@
   <div class="wrap hero-grid">
     <div class="hero-head">
       <p class="kicker reveal">Free browser for Windows 10 and 11</p>
-      <h1 class="reveal"><span>Tabs that rest.</span> <em>A PC that breathes.</em></h1>
+      <h1 class="reveal"><span>Eight tabs in 777 MB.</span> <em>Chrome used 2,043 MB.</em></h1>
     </div>
     <div class="hero-copy">
-      <p class="lede reveal">Airy runs on the same Chromium engine as Chrome and Edge, so your sites work the same. The difference: background tabs go to sleep after 30 seconds, and ads and trackers are blocked from the first click.</p>
+      <p class="lede reveal">Airy runs on the same Chromium engine as Chrome and Edge, so your sites work the same. The difference: background tabs go to sleep after 30 seconds, and ads and trackers are blocked by default.</p>
       <div class="cta reveal">
         <a class="btn btn-primary" href="https://github.com/nishants-lab/airy/releases/download/v1.0.0/AirySetup-1.0.0.exe"><svg class="win" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 0h7.5v7.5H0zM8.5 0H16v7.5H8.5zM0 8.5h7.5V16H0zM8.5 8.5H16V16H8.5z"/></svg>Download for Windows</a>
         <a class="btn btn-quiet" href="#memory">See the numbers</a>
@@ -63,9 +63,9 @@
 <section class="mem" id="memory">
   <div class="wrap">
     <div class="mem-head">
-      <p class="kicker">Measured, not guessed</p>
-      <h2>Same eight tabs.<br><em>A third of the memory.</em></h2>
-      <p class="lede">Chrome keeps most background tabs running. Edge waits 15 minutes before it puts them to sleep. Airy freezes them after 30 seconds and unloads them after 10 minutes, so a busy window stays light.</p>
+      <p class="kicker">Memory test</p>
+      <h2>The same eight tabs <em>in each browser</em></h2>
+      <p class="lede">Chrome keeps most background tabs running. Edge puts them to sleep after 15 minutes. Airy puts them to sleep after 30 seconds and unloads them after 10 minutes.</p>
     </div>
     <ul class="bars" aria-label="Memory used after 60 seconds idle, in megabytes">
       <li class="bar"><div class="name">Chrome 157</div><div class="track"><div class="fill" style="--w:100%"></div></div><div class="val num">2,043<span>MB</span></div></li>
@@ -96,7 +96,7 @@
   <div class="wrap states-grid">
     <div>
       <p class="kicker">How tabs rest</p>
-      <h2 style="margin-top:1.2rem">Out of sight,<br><em>out of memory.</em></h2>
+      <h2 style="margin-top:1.2rem">What happens to <em>a background tab</em></h2>
       <ol class="timeline">
         <li><span class="dot">1</span><div><h3>Live <small>the tab you are on</small></h3><p>Full page in memory. A tab you left less than 30 seconds ago is still live.</p></div></li>
         <li><span class="dot">2</span><div><h3>Sleeping <small>after 30 seconds</small></h3><p>Frozen: no scripts, timers or drawing, and the engine is asked to trim its memory. One click and it is back, instantly.</p></div></li>
@@ -106,7 +106,7 @@
     </div>
     <div class="stack">
       <img src="assets/memory.webp" width="522" height="233" alt="Airy's memory readout: Airy is using 273 MB across 12 processes. Tabs: 1 live, 2 sleeping, 3 unloaded.">
-      <p class="cap">The toolbar always shows what Airy is using, the same number Task Manager shows. Hover for the tab breakdown, click for each process.</p>
+      <p class="cap">The toolbar shows Airy's memory use, the same number Task Manager shows. Hover for the tab breakdown; click for each process.</p>
     </div>
   </div>
 </section>
@@ -114,8 +114,8 @@
   <div class="wrap priv-grid">
     <div class="priv-copy">
       <p class="kicker">Private by default</p>
-      <h2>Brave-style protection, <em>already switched on.</em></h2>
-      <p class="lede">No settings to hunt for. Every protection below is on the moment you open Airy, and the shield shows what was stopped on each page.</p>
+      <h2>Protection that is on <em>from the start</em></h2>
+      <p class="lede">Every protection below is on when you first open Airy. The shield button shows what was blocked on each page. The defaults follow Brave's.</p>
       <img src="assets/protect.webp" width="642" height="365" alt="Airy's Protection panel for a news site: protection on, 2 ads and trackers blocked on this page, fingerprinting protected, tracking prevention strict.">
     </div>
     <ul class="plist">
@@ -126,15 +126,15 @@
       <li><b>Tracking redirects skipped</b><span>Link shims from Google, Facebook, YouTube, Reddit and LinkedIn are bypassed, so you go straight to the real site.</span></li>
       <li><b>Fingerprinting noise</b><span>Canvas, WebGL and audio reads get small per-site noise, and device details are generalised.</span></li>
       <li><b>Global Privacy Control</b><span>Tells every site not to sell or share your data.</span></li>
-      <li><b>WebRTC kept quiet</b><span>Your local IP address is not exposed to pages.</span></li>
-      <li><b>Nothing sent home</b><span>Airy has no telemetry and no account. Search defaults to DuckDuckGo.</span></li>
+      <li><b>Local IP address hidden</b><span>WebRTC does not expose your local IP address to pages.</span></li>
+      <li><b>No telemetry</b><span>Airy sends no usage data and needs no account. Search defaults to DuckDuckGo.</span></li>
       <li><b>Clear on exit</b><span>Optional: wipe cookies, cache and history every time Airy closes.</span></li>
     </ul>
   </div>
   <div class="wrap private">
     <img src="assets/private.webp" width="1200" height="777" alt="An Airy private tab with a violet frame and a note explaining that private tabs are not saved to history.">
     <div>
-      <h3>Private tabs, <em>tinted violet</em> so you always know.</h3>
+      <h3>Private tabs have <em>a violet frame</em></h3>
       <p class="muted" style="margin-top:1rem">Ctrl+Shift+N opens a separate in-memory profile. No history, no saved session, and its cookies are deleted when you close the last private tab.</p>
     </div>
   </div>
@@ -142,7 +142,7 @@
 <section class="compare" id="compare">
   <div class="wrap">
     <p class="kicker">Side by side</p>
-    <h2 style="margin-top:1.2rem">Lighter where it counts. <em>Upfront about the rest.</em></h2>
+    <h2 style="margin-top:1.2rem">Airy, Chrome and Edge <em>compared</em></h2>
     <div class="tbl-wrap">
       <table>
         <thead><tr><th scope="col"><span class="skip">Feature</span></th><th scope="col" class="us">Airy 1.0</th><th scope="col">Chrome</th><th scope="col">Edge</th></tr></thead>
@@ -169,8 +169,8 @@
 <section>
   <div class="wrap fam-grid">
     <div>
-      <p class="kicker">Feels like home</p>
-      <h2 style="margin-top:1.2rem">Everything where <em>your hands expect it.</em></h2>
+      <p class="kicker">Everyday use</p>
+      <h2 style="margin-top:1.2rem">Works like <em>Chrome and Edge</em></h2>
       <ul class="fam-list">
         <li><b>Tabs in the title bar</b><span>Like Chrome and Edge, with Windows 11 Snap Layouts on the maximize button.</span></li>
         <li><b>Light and dark</b><span>Follows your Windows theme and tells sites, or pick one under Appearance.</span></li>
@@ -187,7 +187,7 @@
   <div class="wrap dl-card">
     <div>
       <img class="icon" src="assets/icon-256.png" alt="" width="72" height="72">
-      <h2>Give your PC <em>some air.</em></h2>
+      <h2>Download <em>Airy 1.0</em></h2>
       <p class="lede" style="margin-top:1.2rem">Version 1.0.0. Free, for Windows 10 (version 1903 or later) and Windows 11, 64-bit.</p>
       <div class="req">
         <p>The .NET runtime is included. Airy uses the Microsoft Edge WebView2 Runtime, which Windows 11 includes and most Windows 10 PCs already have; setup links to Microsoft's installer if it is missing.</p>
@@ -211,7 +211,7 @@
 </section>
 <section class="faq" id="faq">
   <div class="wrap faq-grid">
-    <div><p class="kicker">Questions</p><h2 style="margin-top:1.2rem">Good to <em>know.</em></h2></div>
+    <div><p class="kicker">FAQ</p><h2 style="margin-top:1.2rem">Common <em>questions</em></h2></div>
     <div>
       <details><summary>Will my sites work?</summary><p>Yes. Airy draws pages with Microsoft Edge WebView2, the same Chromium engine that runs Edge, and Windows keeps it up to date. Sites that work in Chrome and Edge work in Airy.</p></details>
       <details><summary>What happens to a sleeping tab?</summary><p>It is frozen in place: no scripts, timers or video run until you click it, and then it wakes instantly. After 10 minutes in the background it is unloaded, and clicking it loads the page again. You can change both times under Memory saving, or mark a tab "Keep this tab awake".</p></details>
