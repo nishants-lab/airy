@@ -61,7 +61,7 @@ p { margin: 0; text-wrap: pretty; }
 .shot img { border-radius: 14px; box-shadow: 0 0 0 1px oklch(22% 0.03 262 / .08), 0 30px 70px -30px oklch(30% 0.1 262 / .45); }
 .tag { position: absolute; display: flex; gap: .55rem; align-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: .6rem .85rem; font-size: .88rem; color: var(--ink-2); box-shadow: 0 12px 30px -18px oklch(30% 0.08 262 / .5); }
 .tag b { color: var(--ink); font-weight: 650; }
-.tag-sleep { bottom: 12%; left: -1.5rem; } .tag-mem { top: 15%; right: clamp(2.5rem, 9vw, 10rem); }
+.tag-sleep { top: 13%; left: -1.5rem; } .tag-mem { top: 13%; right: -1.5rem; }
 .moon { width: 15px; height: 15px; color: var(--blue); }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .shot { margin-right: 0; } .tag-mem { right: 1rem; } .tag-sleep { left: 1rem; } }
 @media (max-width: 560px) { .tag { display: none; } }

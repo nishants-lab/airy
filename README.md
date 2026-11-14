@@ -4,7 +4,7 @@ A light, private browser for Windows 10 and 11. Background tabs sleep after 30 s
 
 **Website and download:** https://nishants-lab.github.io/airy/
 
-![Airy showing a Wikipedia article, with sleeping background tabs and the memory readout in the toolbar](assets/hero.webp)
+![Airy's new tab page with five sleeping background tabs, its privacy counters and the memory readout in the toolbar](assets/hero.webp)
 
 With 8 busy tabs left idle for 60 seconds, Airy used 777 MB, Chrome 2,043 MB and Edge 1,460 MB (Task Manager, average of two runs). The website explains how this was measured.
 

@@ -45,9 +45,10 @@ for i, (name, mb) in enumerate([("Chrome", 2043), ("Edge", 1460), ("Airy", 777)]
     d.text((172 + w, y + 3), f"{mb:,} MB", font=sans, fill=c)
 d.text((64, 568), "Free for Windows 10 and 11", font=sans2, fill=grey)
 
-shot = Image.open(ROOT / "assets" / "hero.webp").convert("RGB").crop((0, 0, 1000, 1030))
-shot = shot.resize((600, 618), Image.LANCZOS)
-x0, y0 = 668, 110
+# The left part of the hero: sleeping tabs, the start page and its privacy counters. It runs off the right edge.
+shot = Image.open(ROOT / "assets" / "hero.webp").convert("RGB").crop((0, 0, 1180, 1110))
+shot = shot.resize((round(1180 * 0.5), round(1110 * 0.5)), Image.LANCZOS)
+x0, y0 = 652, 64
 shadow = Image.new("RGBA", (shot.width + 80, shot.height + 80), (0, 0, 0, 0))
 ImageDraw.Draw(shadow).rounded_rectangle([40, 52, 40 + shot.width, 52 + shot.height], 18, fill=(30, 50, 110, 90))
 shadow = shadow.filter(ImageFilter.GaussianBlur(22))
