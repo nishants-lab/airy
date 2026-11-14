@@ -20,3 +20,10 @@ Checksums are in [SHA256SUMS.txt](https://github.com/nishants-lab/airy/releases/
 Found a problem? [Open an issue](https://github.com/nishants-lab/airy/issues).
 
 This repository holds the website and the release downloads. Airy is free under the [MIT License](LICENSE). The website fonts, Instrument Serif and Figtree, are under the SIL Open Font License (see `assets/fonts/`).
+
+## Tools
+
+- `python tools/og.py` rebuilds `assets/og.png`, the link preview image, from `assets/hero.webp`.
+- `python tools/preview.py [folder]` takes desktop and phone screenshots of `index.html` with headless Edge, to check the layout before a push.
+
+Both need Python 3 with Pillow (`pip install pillow`). The fonts in `tools/fonts` are under the SIL Open Font License.
