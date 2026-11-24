@@ -223,6 +223,7 @@
       <details><summary>What happens to a sleeping tab?</summary><p>It is frozen in place: no scripts, timers or video run until you click it. After 10 minutes in the background it is unloaded, and clicking it loads the page again. You can change both times under Memory saving, or mark a tab "Keep this tab awake".</p></details>
       <details><summary>Why does Windows warn me about the download?</summary><p>SmartScreen warns about new apps that are not code-signed. Airy is not signed yet. Choose More info, then Run anyway, and compare the file with SHA256SUMS.txt if you want to be sure it is the original.</p></details>
       <details><summary>Does Airy collect anything?</summary><p>No. Airy has no telemetry, no account and no servers. The WebView2 engine's own diagnostic data follows your Windows privacy settings.</p></details>
+      <details><summary>Does this website track me?</summary><p>No cookies and no personal data. Each visit sends one request to <a href="https://hits.sh/">hits.sh</a>, a public counter, so we can see how many people visit and whether they came from X. The Airy app itself sends nothing.</p></details>
       <details><summary>Where is my data kept?</summary><p>Installed: <code>%LOCALAPPDATA%\Airy</code>, kept when you update. Portable: an AiryData folder next to Airy.exe. Uninstalling asks whether to delete it.</p></details>
       <details><summary>Can I bring my bookmarks and extensions?</summary><p>Bookmarks, yes: open the menu, then Bookmarks, then Import from Chrome or Import from Edge. Airy reads the bookmarks of that browser's main profile on this PC and nothing else. Extensions and saved passwords do not carry over. Passwords and autofill you save in Airy are kept by the engine.</p></details>
       <details><summary>How do I update Airy?</summary><p>Download the new setup and run it. It replaces the old version and keeps your tabs, bookmarks, settings and data; if Airy is open, setup closes it first and your tabs come back. Airy does not update itself yet. New versions are posted on the <a href="https://github.com/nishants-lab/airy/releases">release page</a>.</p></details>
@@ -237,5 +238,6 @@
     <p>Made by <a href="https://github.com/nishants-lab">Nishant Sinha</a>. Free under the <a href="LICENSE">MIT License</a>. Fonts: Instrument Serif and Figtree, <a href="assets/fonts/OFL-Figtree.txt">SIL Open Font License</a>.</p>
   </div>
 </footer>
+<script>(function(){if(location.protocol!=="https:")return;var r=document.referrer||"";var src=/\/\/(t\.co|(www\.|mobile\.)?(x|twitter)\.com)\//.test(r)?"x":"other";new Image().src="https://hits.sh/nishants-lab.github.io/airy/visit-"+src+".svg";})();</script>
 </body>
 </html>
