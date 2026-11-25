@@ -1,4 +1,4 @@
-"""Builds assets/og.png, the 1200x630 link preview image, from assets/hero.webp.
+"""Builds assets/og.png, the 1200x630 link preview image, from assets/hero-12.webp.
 
 Usage, from the repository root or anywhere:  python tools/og.py
 Needs Pillow (pip install pillow). Fonts are in tools/fonts (SIL Open Font License).
@@ -33,8 +33,8 @@ ink, blue, grey = (28, 33, 48), (30, 84, 200), (92, 100, 118)
 icon = Image.open(ROOT / "assets" / "icon-256.png").resize((52, 52), Image.LANCZOS)
 im.paste(icon, (64, 58), icon)
 d.text((128, 66), "Airy", font=font("Figtree.ttf", 32, 700), fill=ink)
-d.text((64, 168), "A light, private", font=serif, fill=ink)
-d.text((64, 244), "browser for Windows", font=serif, fill=blue)
+d.text((64, 168), "Spaces, split view", font=serif, fill=ink)
+d.text((64, 244), "and tabs that sleep", font=serif, fill=blue)
 d.text((64, 376), "8 busy tabs, after 60 s idle", font=sans2, fill=grey)
 for i, (name, mb) in enumerate([("Chrome", 2043), ("Edge", 1460), ("Airy", 777)]):
     y = 414 + i * 44
@@ -45,9 +45,9 @@ for i, (name, mb) in enumerate([("Chrome", 2043), ("Edge", 1460), ("Airy", 777)]
     d.text((172 + w, y + 3), f"{mb:,} MB", font=sans, fill=c)
 d.text((64, 568), "Free for Windows 10 and 11", font=sans2, fill=grey)
 
-# The left part of the hero: sleeping tabs, the start page and its privacy counters. It runs off the right edge.
-shot = Image.open(ROOT / "assets" / "hero.webp").convert("RGB").crop((0, 0, 1180, 1110))
-shot = shot.resize((round(1180 * 0.5), round(1110 * 0.5)), Image.LANCZOS)
+# The left part of the hero: tabs on the side, split view and the command bar. It runs off the right edge.
+shot = Image.open(ROOT / "assets" / "hero-12.webp").convert("RGB").crop((0, 0, 1180, 1010))
+shot = shot.resize((round(1180 * 0.5), round(1010 * 0.5)), Image.LANCZOS)
 x0, y0 = 652, 64
 shadow = Image.new("RGBA", (shot.width + 80, shot.height + 80), (0, 0, 0, 0))
 ImageDraw.Draw(shadow).rounded_rectangle([40, 52, 40 + shot.width, 52 + shot.height], 18, fill=(30, 50, 110, 90))
